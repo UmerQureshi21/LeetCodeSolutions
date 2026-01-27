@@ -18,12 +18,7 @@ class Solution:
 
         for i, num in enumerate(nums):
             result[i] = pre[i] + abs(num * (len(nums) - i - 1) - post[i])
-            
 
-        # for i, num in enumerate(nums):
-        #     print(f"Num: {num}, occurences: {len(nums) - 1}, remainingSum: {totalSum - num}")
-        #     result[i] = abs(num * (len(nums) - 1) - (totalSum - num))
-        # return result
         return result
 
 
