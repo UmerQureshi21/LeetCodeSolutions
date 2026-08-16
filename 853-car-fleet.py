@@ -4,6 +4,8 @@ from typing import List
 def carFleet(target: int, position: List[int], speed: List[int]) -> int:
     cars = []
     stack = []
+    #made the mistake of assuming that the cars can only cathcup after every hour, not continously like
+    #in between each hour
     for i, pos in enumerate(position):
         cars.append({"p":pos,"s":speed[i],"t": (target-pos)/speed[i]})
     cars.sort(key=lambda car: car["p"])

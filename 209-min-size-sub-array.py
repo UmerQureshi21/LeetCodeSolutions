@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
         sum = nums[0]
@@ -34,3 +36,5 @@ class Solution:
                 if l < min:
                     min = l
             return min
+        
+ 
