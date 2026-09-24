@@ -10,7 +10,7 @@ class Solution:
             preMap[course].append(pre_req)
             
         
-        visitSet = set()
+        visitSet = set() #visited nodes on current pathf
         def dfs(crs):
             if crs in visitSet: # 
                 return False
