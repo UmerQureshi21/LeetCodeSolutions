@@ -20,7 +20,7 @@ class Solution:
         while temp:
             print(temp.val)
             temp = temp.next
-            
+                        
 node3 = ListNode(3)
 node2 = ListNode(2,node3)
 node1 = ListNode(1,node2)
